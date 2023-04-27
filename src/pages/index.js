@@ -12,8 +12,7 @@ export default function Home() {
         method: "GET",
         headers: {
           "content-type": "application/octet-stream",
-          "X-RapidAPI-Key":
-            "b549dd92a7msh2682a5e9edf22cap195048jsn36e8b6786d14",
+          "X-RapidAPI-Key": String(process.env.RAPID_API_KEY),
           "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
         },
       };
