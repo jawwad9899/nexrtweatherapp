@@ -4,7 +4,7 @@ import styles from "../styles/Main.module.css";
 export default function Home() {
   const [location, setLocation] = useState("");
   const [locationInformation, setLocationInformation] = useState(null);
-
+  console.log(process.env.RAPID_API_KEY);
   async function fetchWeather(location_info) {
     try {
       const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${location_info}`;
